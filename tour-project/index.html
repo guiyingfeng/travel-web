@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+<head>
+	<meta charset="UTF-8">
+	<title>首页--景点网站</title>
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="css/basic.css">
+	<style>
+
+		/* 用户按钮及下拉框样式 */
+		nav ul li.user-dropdown,
+		nav ul li.information-dropdown {
+			position: relative;
+		}
+
+		nav ul li.user-dropdown a,
+		nav ul li.information-dropdown a {
+			cursor: pointer;
+		}
+
+		nav ul li.user-dropdown .dropdown-menu,
+		nav ul li.information-dropdown .dropdown-menu {
+			display: none;
+			position: absolute;
+			top: 100%;
+			left: 0;
+			background: #333;
+			padding: 10px;
+			list-style: none;
+		}
+
+		/* 修改这里，设置具体宽度值，并设置 z-index 以确保下拉菜单在上层 */
+		nav ul li.user-dropdown:hover .dropdown-menu,
+		nav ul li.information-dropdown:hover .dropdown-menu {
+			display: block;
+			width: 150px; /* 设置具体的宽度值 */
+			z-index: 1000;
+		}
+	</style>
+</head>
+<body>
+<header>
+	<nav id="nav">
+		<ul>
+			<li><a href="index.html">首页</a></li>
+			<li class="information-dropdown">
+				<a href="informations.html">广西景点</a>
+				<ul class="dropdown-menu">
+					<li><a href="informations.html">涠洲岛</a></li>
+					<li><a href="informations.html">遇龙河</a></li>
+					<li><a href="informations.html">漓江</a></li>
+					<li><a href="informations.html">象鼻山</a></li>
+				</ul>
+			</li>
+			<li><a href="#">注册</a></li>
+			<li><a href="#">登录</a></li>
+			<li class="user-dropdown">
+				<a href="#">用户</a>
+				<ul class="dropdown-menu">
+					<li><a href="#">个人中心</a></li>
+					<li><a href="#">收藏景点</a></li>
+				</ul>
+			</li>
+
+		</ul>
+	</nav>
+</header>
+
+<div class="search">
+
+    </div>
+<div class="tour">
+	<section class="news">
+	<h2>热门景点</h2>
+	<p>飘逸的银川，美丽的桂平，广西山水甲天下，多彩多姿的人文之旅。</p>
+	</section>
+	<figure>
+		<a href="informations.html">
+	<img src="img/tour11.jpg" alt="">
+
+	<figcaption>
+
+	<strong class="title"> &lt;涠洲岛&gt;</strong> 北海市海城区涠洲镇
+	<div class="info">
+	    <em class="sat">满意度 77%</em>
+		<span class="price">NO. <strong>1桂林必打卡景点</strong> </span>
+	</div>
+	<div class="type">涠洲岛</div>
+
+	</figcaption>
+	</figure>
+	<figure>
+		<a href="informations.html">
+	<img src="img/tour12.jpg" alt="">
+	<figcaption>
+	<strong class="title"> &lt;遇龙河&gt;</strong> 桂林市阳朔县白沙镇遇龙村
+	<div class="info">
+	    <em class="sat">满意度 77%</em>
+		<span class="price">NO. <strong>2桂林必打卡景点</strong> </span>
+	</div>
+	<div class="type">遇龙河</div>
+
+	</figcaption>
+	</figure>
+	<figure>
+	<img src="img/tour13.jpg" alt="">
+	<figcaption>
+	<strong class="title"> &lt;漓江&gt;</strong> 广西壮族自治区桂林市灵川县
+	<div class="info">
+	    <em class="sat">满意度 77%</em>
+		<span class="price">NO. <strong>3桂林必打卡景点</strong> </span>
+	</div>
+	<div class="type">漓江</div>
+
+	</figcaption>
+	</figure>
+	<figure>
+	<img src="img/tour14.jpg" alt="">
+	<figcaption>
+	<strong class="title"> &lt;象鼻山&gt;</strong> 桂林市象山区滨江路
+	<div class="info">
+	    <em class="sat">满意度 77%</em>
+		<span class="price">NO. <strong>4桂林必打卡景点</strong> </span>
+	</div>
+	<div class="type">象鼻山</div>
+
+	</figcaption>
+	</figure>
+	<figure>
+	<img src="img/tour15.jpg" alt="">
+	<figcaption>
+	<strong class="title"> &lt;龙脊梯田&gt;</strong> 桂林市龙胜各族自治县和平乡平安村
+	<div class="info">
+	    <em class="sat">满意度 77%</em>
+		<span class="price">NO. <strong>5桂林必打卡景点</strong> </span>
+	</div>
+	<div class="type">龙脊梯田</div>
+
+	</figcaption>
+	</figure>
+	<figure>
+	<img src="img/tour16.jpg" alt="">
+	<figcaption>
+	<strong class="title"> &lt;青秀山&gt;</strong> 南宁市青秀区青山路
+	<div class="info">
+	    <em class="sat">满意度 77%</em>
+		<span class="price">NO. <strong>6桂林必打卡景点</strong> </span>
+	</div>
+	<div class="type">青秀山</div>
+
+	</figcaption>
+	</figure>
+	<figure>
+	<img src="img/tour17.jpg" alt="">
+	<figcaption>
+	<strong class="title"> &lt;独秀峰王城&gt;</strong> 桂林市秀峰区王城路
+	<div class="info">
+	    <em class="sat">满意度 77%</em>
+		<span class="price">NO. <strong>7桂林必打卡景点</strong> </span>
+	</div>
+	<div class="type">独秀峰王城</div>
+
+	</figcaption>
+	</figure>
+	<figure>
+	<img src="img/tour18.jpg" alt="">
+	<figcaption>
+	<strong class="title"> &lt;两江四湖&gt;</strong> 桂林市象山区两江四湖景区
+	<div class="info">
+	    <em class="sat">满意度 77%</em>
+		<span class="price">NO. <strong>8桂林必打卡景点</strong> </span>
+	</div>
+	<div class="type">两江四湖</div>
+
+	</figcaption>
+	</figure>
+	<figure>
+	<img src="img/tour19.jpg" alt="">
+	<figcaption>
+	<strong class="title"> &lt;银子岩&gt;</strong> 桂林市荔浦县马岭镇马岭镇
+	<div class="info">
+	    <em class="sat">满意度 77%</em>
+		<span class="price">NO. <strong>9桂林必打卡景点</strong> </span>
+	</div>
+	<div class="type">银子岩</div>
+
+	</figcaption>
+	</figure>
+	</div>
+	<footer id="footer">
+	<div class="top">
+	<div class="block left">
+	<h3>合作伙伴</h3>
+	<hr>
+	<ul>
+		<li>途牛旅游网</li>
+		<li>驴妈妈旅游网</li>
+		<li>携程旅游</li>
+		<li>中国去青年旅行社</li>
+	</ul>
+
+	</div>
+	<div class="block middle">
+	<h3>旅游FAQ</h3>
+	<hr>
+	<ul>
+		<li>旅游合同签订方式？</li>
+		<li>儿童价是基于什么制定的？</li>
+		<li>旅游的线路品质怎么界定的？</li>
+		<li>单房差是什么？</li>
+		<li>旅游保险有那些种类？</li>
+	</ul>
+	</div>
+	<div class="block right">
+	<h3>联系方式</h3>
+	<hr>
+		<ul>
+			<li>微博：weibo.com</li>
+			<li>邮件：12315@qq.com</li>
+			<li>地址：梧州学院</li>
+		</ul>
+	</div>
+
+	</div>
+		<div class="bottom">梧州学院| 广西景点分享| 看桂途</div>
+	</footer>
+</body>
+</html>

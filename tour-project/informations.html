@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+<head>
+	<meta charset="UTF-8">
+	<title>看桂途</title>
+	<link rel="stylesheet" href="css/column.css">
+	<link rel="stylesheet" href="css/basic.css">
+    <style>
+
+        /* 用户按钮及下拉框样式 */
+        nav ul li.user-dropdown,
+        nav ul li.information-dropdown {
+            position: relative;
+        }
+
+        nav ul li.user-dropdown a,
+        nav ul li.information-dropdown a {
+            cursor: pointer;
+        }
+
+        nav ul li.user-dropdown .dropdown-menu,
+        nav ul li.information-dropdown .dropdown-menu {
+            display: none;
+            position: absolute;
+            top: 100%;
+            left: 0;
+            background: #333;
+            padding: 10px;
+            list-style: none;
+        }
+
+        nav ul li.user-dropdown:hover .dropdown-menu,
+        nav ul li.information-dropdown:hover .dropdown-menu {
+            display: block;
+            width: 150px; /* 设置具体的宽度值 */
+            z-index: 1000;
+        }
+    </style>
+</head>
+<body>
+<header>
+    <nav id="nav">
+        <ul>
+            <li><a href="index.html">首页</a></li>
+            <li class="information-dropdown">
+                <a href="informations.html">广西景点</a>
+                <ul class="dropdown-menu">
+                    <li><a href="#">涠洲岛</a></li>
+                    <li><a href="#">遇龙河</a></li>
+                    <li><a href="#">漓江</a></li>
+                    <li><a href="#">象鼻山</a></li>
+                </ul>
+            </li>
+            <li><a href="register.html">注册</a></li>
+            <li><a href="login.html">登录</a></li>
+            <li class="user-dropdown">
+                <a href="#">用户</a>
+                <ul class="dropdown-menu">
+                    <li><a href="#">个人中心</a></li>
+                    <li><a href="#">收藏景点</a></li>
+                </ul>
+            </li>
+
+        </ul>
+    </nav>
+</header>
+<div id="headline">
+    <div class="headline">
+    <hgroup>
+        <h2>景点资讯</h2>
+        <p>介绍各种景点信息、资讯要闻、景点攻略等</p>
+        </hgroup>
+    </div>
+</div>
+<div id="container">
+<article class="list information">
+<div class="infos">
+<ul class="infos_left">
+	<li><a href="">爆火景点</a></li>
+
+</ul>
+<ul class="infos_right">
+	<li><a href="" class="selected">推荐</a></li>
+	<li><a href="">介绍</a></li>
+	<li><a href="">攻略</a></li>
+</ul>
+
+</div>
+
+   <figure class="tour">
+     <img src="img/tour11.jpg" alt="">
+       <figcation class="description">
+         <h3>涠洲岛</h3>
+          <p>涠洲岛位于北海南部，是我国面积较大的死火山岛，岛上鳄鱼山景区的火山岩、滴水丹屏的海蚀景观、风情各异的海滩、美丽的日出日落，都是涠洲岛的魅力所在。</p>
+          <ol>
+          	<li><mark>推荐指数</mark> ★★★★★★</li>
+          </ol>
+          <div class="buy">
+          <div class="reserve"><a href="">立即收藏</a></div>
+          </div>
+          <div class="type">涠洲岛</div>
+          <div class="disc"><span>热门</span></div>
+          <div class="footer">本介绍由广西景点赞助提供，于<time>2023-12-12</time>上传</div>
+       </figcation>
+    </figure>
+    <figure class="tour">
+    <img src="img/tour12.jpg" alt="遇龙河">
+    <figcation class="description">
+        <h3>遇龙河</h3>
+        <p>遇龙河是漓江在阳朔境内的一条支流，河水清澈如镜，遇龙河的竹筏漂流很有名，可以坐筏细细品味沿河秀美的山水田园风光。 </p>
+            <ol>
+                <li><mark>推荐指数</mark> ★★★★★★</li>
+            </ol>
+            <div class="buy">
+                <div class="reserve"><a href="###">立即收藏</a>
+                </div>
+            </div>
+            <div class="type">遇龙河</div>
+            <div class="disc"><span>热门</span>
+            </div>
+        <div class="footer">本介绍由广西景点赞助提供，于<time>2023-12-12</time>上传</div>
+    </figcation>
+</figure>
+<figure class="tour">
+    <img src="img/tour13.jpg" alt="漓江">
+    <figcation class="description">
+        <h3>漓江</h3>
+        <p>“百里漓江，百里画廊”，每一处景致都是一幅典型的中国水墨画，漓江景区青峰夹岸，绿水萦洄，峡谷峭壁，悬泉飞瀑，绿洲险滩，奇洞美石，景致万千，沿江分布着几十处知名的景点。</p>
+            <ol>
+                <li><mark>推荐指数</mark> ★★★★★★</li>
+            </ol>
+            <div class="buy">
+                <div class="reserve"><a href="###">立即收藏</a>
+                </div>
+            </div>
+            <div class="type">漓江</div>
+            <div class="disc"><span>热门</span>
+            </div>
+        <div class="footer">本介绍由广西景点赞助提供，于<time>2023-12-12</time>上传</div>
+
+
+    </figcation>
+</figure>
+<figure class="tour">
+    <img src="img/tour14.jpg" alt="象鼻山">
+    <figcation class="description">
+        <h3>象鼻山</h3>
+        <p>象鼻山景区位于桂林市中心、漓江与桃花江的交汇处，它犹如一匹舒卷长鼻、豪饮漓江甘泉的巨象而得名。象鼻山以其栩栩如生的形象引人入胜，是桂林山水的典型代表。 </p>
+            <ol>
+                <li>
+                    <mark>推荐指数</mark> ★★★★★★</li>
+            </ol>
+            <div class="buy">
+                <div class="reserve"><a href="###">立即收藏</a>
+                </div>
+            </div>
+            <div class="type">象鼻山</div>
+            <div class="disc"><span>热门</span>
+            </div>
+        <div class="footer">本介绍由广西景点赞助提供，于<time>2023-12-12</time>上传</div>
+    </figcation>
+</figure>
+<figure class="tour">
+    <img src="img/tour15.jpg" alt="龙脊梯田">
+    <figcation class="description">
+        <h3>龙脊梯田</h3>
+        <p>龙脊梯田是桂林地区一个规模宏大的梯田群，这里坐落着几个少数民族古寨，居住壮、瑶两个民族。著名的村寨是平安寨，金坑大寨，古壮寨，黄洛瑶寨。 </p>
+            <ol>
+                <li>
+                    <mark>推荐指数</mark> ★★★★★★</li>
+            </ol>
+            <div class="buy">
+                <div class="reserve"><a href="###">立即收藏</a>
+                </div>
+            </div>
+            <div class="type">龙脊梯田</div>
+            <div class="disc"><span>热门</span>
+            </div>
+        <div class="footer">本介绍由广西景点赞助提供，于<time>2023-12-12</time>上传</div>
+    </figcation>
+</figure>
+<figure class="tour">
+    <img src="img/tour16.jpg" alt="青秀山">
+    <figcation class="description">
+        <h3>青秀山游</h3>
+        <p>青秀山位于南宁市区往东南约9公里处的邕江江畔，坐落着青山、凤凰岭等十几座山峦，是南宁市知名的风景区。在这里，漫步于园内欣赏各类花卉，享受惬意。 </p>
+            <ol>
+                <li>
+                    <mark>推荐指数</mark> ★★★★★★</li>
+            </ol>
+            <div class="buy">
+                <div class="reserve"><a href="###">立即抢购</a>
+                </div>
+            </div>
+            <div class="type">青秀山</div>
+            <div class="disc"><span>热门</span>
+            </div>
+        <div class="footer">本介绍由广西景点赞助提供，于<time>2023-12-12</time>上传</div>
+    </figcation>
+</figure>
+<figure class="tour">
+    <img src="img/tour17.jpg" alt="塞舌尔迪拜9日自助游">
+    <figcation class="description">
+        <h3>独秀峰王城</h3>
+        <p>景区包括靖江王府、独秀峰、贡院和城墙，是国家AAAAA级旅游景区。始建于600多年前的明朝洪武年间，文化底蕴深厚，是我国现存完好的藩王遗址，也是桂林城的发祥地。 </p>
+            <ol>
+                <li>
+                    <mark>推荐指数</mark> ★★★★★★</li>
+            </ol>
+            <div class="buy">
+
+                <div class="reserve"><a href="###">立即收藏</a>
+                </div>
+            </div>
+            <div class="type">独秀峰王城</div>
+            <div class="disc"><span>热门</span>
+            </div>
+        <div class="footer">本介绍由广西景点赞助提供，于<time>2023-12-12</time>上传</div>
+    </figcation>
+</figure>
+<figure class="tour">
+    <img src="img/tour18.jpg" alt="两江四湖">
+    <figcation class="description">
+        <h3>两江四湖</h3>
+        <p>两江四湖包括了桂林市中心区的漓江、桃花江以及杉湖、榕湖、桂湖、木龙湖，是桂林城市中心优美的环城风景带，也是桂林的风景名片。 </p>
+            <ol>
+                <li>
+                    <mark>推荐指数</mark> ★★★★★★</li>
+            </ol>
+            <div class="buy">
+                <div class="reserve"><a href="###">立即收藏</a>
+                </div>
+            </div>
+            <div class="type">两江四湖</div>
+            <div class="disc"><span>热门</span>
+            </div>
+        <div class="footer">本介绍由广西景点赞助提供，于<time>2023-12-12</time>上传</div>
+    </figcation>
+</figure>
+<figure class="tour">
+    <img src="img/tour19.jpg" alt="银子岩">
+    <figcation class="description">
+        <h3>银子岩</h3>
+        <p>盐城直飞，不走回头路，境外无自费，超值之旅 </p>
+            <ol>
+                <li>
+                    <mark>推荐指数</mark> ★★★★★★</li>
+            </ol>
+            <div class="buy">
+                <div class="reserve"><a href="###">立即收藏</a>
+                </div>
+            </div>
+            <div class="type">银子岩</div>
+            <div class="disc"><span>热门</span>
+            </div>
+        <div class="footer">本介绍由广西景点赞助提供，于<time>2023-12-12</time>上传</div>
+    </figcation>
+</figure>
+<div class="more">加载更多...</div>
+</article>
+<aside class="sidebar">
+    <div class="recommend sidebox">
+    <h3>景点推荐</h3>
+    <div class="tag">
+    <ul>
+		<li><a href="###">漓江(12)</a></li>
+		<li><a href="###">象鼻山(5)</a></li>
+		<li><a href="###">临桂田园(8)</a></li>
+		<li><a href="###">遇龙河(16)</a></li>
+		<li><a href="###">西街(4)</a></li>
+		<li><a href="###">银滩(9)</a></li>
+		<li><a href="###">崖口温泉(15)</a></li>
+		<li><a href="###">龙脊梯田(22)</a></li>
+		<li><a href="###">马山风景(5)</a></li>
+		<li><a href="###">金坑温泉(11)</a></li>
+		<li><a href="###">蓝田瀑布(7)</a></li>
+		<li><a href="###">龙头山风(4)</a></li>
+		<li><a href="###">青秀山(18)</a></li>
+		<li><a href="###">银钟瀑布(8)</a></li>
+		<li><a href="###">黄姚古镇(9)</a></li>
+		<li><a href="###">云龙山(16)</a></li>
+		<li><a href="###">龙羊峡(11)</a></li>
+		<li><a href="###">岑参石窟(14)</a></li>
+		<li><a href="###">碧螺塔(7)</a></li>
+		<li><a href="###">荔浦大观峰(3)</a></li>
+		<li><a href="###">芦笛岩(15)</a></li>
+	</ul>
+</div>
+    </div>
+    <div class="hot sidebox">
+    <h3>著名景点</h3>
+    <div class="figure">
+    <figure>
+    <img src="img/hot11.jpg" alt="曼谷-芭提雅6日游">
+    <figcaption>碧螺塔</figcaption>
+</figure>
+<figure>
+    <img src="img/hot12.jpg" alt="马尔代夫双鱼6日游">
+    <figcaption>西街</figcaption>
+</figure>
+<figure>
+    <img src="img/hot13.jpg" alt="海南双飞5日游">
+    <figcaption>银滩</figcaption>
+</figure>
+<figure>
+    <img src="img/hot14.jpg" alt="富山大阪东京8日游">
+    <figcaption>金坑温泉</figcaption>
+</figure>
+    </div>
+
+    </div>
+</aside>
+</div>
+
+	<footer id="footer">
+	<div class="top">
+	<div class="block left">
+	<h3>合作伙伴</h3>
+	<hr>
+	<ul>
+		<li>途牛旅游网</li>
+		<li>驴妈妈旅游网</li>
+		<li>携程旅游</li>
+		<li>中国去青年旅行社</li>
+	</ul>
+
+	</div>
+	<div class="block middle">
+	<h3>旅游FAQ</h3>
+	<hr>
+	<ul>
+		<li>旅游合同签订方式？</li>
+		<li>儿童价是基于什么制定的？</li>
+		<li>旅游的线路品质怎么界定的？</li>
+		<li>单房差是什么？</li>
+		<li>旅游保险有那些种类？</li>
+	</ul>
+	</div>
+	<div class="block right">
+	<h3>联系方式</h3>
+	<hr>
+	<ul>
+		<li>微博：weibo.com</li>
+        <li>邮件：12315@qq.com</li>
+        <li>地址：梧州学院</li>
+	</ul>
+	</div>
+
+	</div>
+	<div class="bottom">梧州学院| 广西景点分享| 看桂途</div>
+	</footer>
+</body>
+</html>
